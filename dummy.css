@@ -1,0 +1,48 @@
+.containers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    background-color: #ff0000;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.profile, .links, .contact {
+    background-color: #ff0000;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    /* Adjust width as necessary */
+    margin: 10px 0;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px;
+}
+
+.more-info {
+    color: #ffd700;
+    /* Example color for the link */
+    text-decoration: none;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 5px 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #ffd700;
+    /* Example color for the links */
+    text-decoration: none;
+}

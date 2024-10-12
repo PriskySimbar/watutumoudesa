@@ -1,0 +1,187 @@
+.container1 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+
+    /* Apply blur effect */
+    background-color: #e5e5e5;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 11px;
+        /* Reduce font size on smaller screens */
+    }
+
+    th, td {
+        padding: 8px;
+        /* Adjust padding for better fit */
+    }
+}
+
+.aseks img {
+    height: 500px;
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 480px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        /* This will be repeated for every row header */
+    }
+
+    tr {
+        margin-bottom: 15px;
+        /* Space between each row */
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td:before {
+        content: attr(data-label);
+        /* Add labels for each cell */
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+.rames {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+
+}
+
+@media only screen and (max-width: 600px) {
+    .asek {
+        padding: 10px;
+        /* Add some padding on small screens */
+    }
+
+    .asek img {
+        border-radius: 8px;
+        height: 470px;
+        width: 460px;
+        /* Optional: Make the image corners rounded */
+    }
+
+    .aseks img {
+        height: 500px;
+        width: 400px;
+    }
+
+    .asekss img {
+        height: max-content;
+        width: 470px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .asek {
+        margin-left: 400px;
+        /* Add margin around the content only on PC screens */
+    }
+
+    /* .aseks {
+        margin-left: 400px;
+    } */
+
+    .asekss {
+        margin-left: 150px;
+    }
+}
+
+.tengah {
+    text-align: center;
+}
+
+.paragraf p {
+
+    text-align: justify;
+    /* Membuat teks rata kiri dan rata kanan */
+    margin: 20px;
+    /* Memberikan margin di sekitar paragraf */
+    line-height: 1.5;
+    color: #000000;
+    font-size: 20px;
+}
+
+.headers {
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #ff0000 5px solid;
+    display: grid;
+    /* Use Grid */
+    place-items: center;
+}
+
+.headers img {
+
+    /* Center both horizontally and vertically */
+    width: 800px;
+    height: 400px;
+}
+
+
+
+
+/* ul {
+    list-style: none;
+    padding: 0;
+} */
+
+.paragraf ul li {
+    margin: 5px 0;
+    padding: 10px;
+
+}
+
+.paragraf ul li ul {
+    margin-left: 20px;
+}
+
+.paragraf li ul li {
+    background: #e5e5e5;
+}
+
+strong {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2em;
+}

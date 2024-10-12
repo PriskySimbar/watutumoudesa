@@ -1,0 +1,218 @@
+.header-tentang {
+    align-items: center;
+    text-align: center;
+    font-size: bold;
+    margin: 50px;
+    color: #ff0000;
+    /* Red color for header text */
+}
+
+.header-tentangp {
+    align-items: center;
+    text-align: center;
+    font-size: bold;
+    margin: 10px;
+
+    margin-bottom: 50px;
+    color: #ff0000;
+    /* Red color for header text */
+}
+
+
+.header-tentang1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 50px;
+    color: #000000;
+    /* Red color for header text */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.info {
+    margin-bottom: 15px;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.info p {
+    margin: 5px 0 0 0;
+    color: #777;
+}
+
+/* Container for Geografis Desa */
+.geografis-desa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+/* Wrapper to contain the image and info side by side */
+.geografis-desa-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    /* Control the maximum width */
+    gap: 20px;
+    /* Space between the logo and the content */
+}
+
+/* Geographical Information Styling */
+.geografis-desa-info {
+    flex: 1;
+    color: #333;
+}
+
+.geografis-desa-info h2 {
+    font-size: 28px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+/* Boundaries Section */
+.boundaries {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.boundary-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.boundary-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.boundary-label {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 16px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.boundary-value {
+    font-size: 14px;
+    color: #333;
+    flex: 2;
+}
+
+/* Image Styling */
+.geografis-desa-image {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo for desktop */
+.logo-mobile {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+
+}
+
+/* Mobile: Show logo and text side by side */
+@media (max-width: 768px) {
+    .geografis-desa-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .geografis-desa-image {
+        flex: 1;
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        /* Adjust width and layout */
+    }
+
+    .geografis-desa-info {
+        flex: 2;
+        max-width: 70%;
+        margin-left: 10px;
+        /* Ensure text takes up more space */
+    }
+
+    .logo-mobile {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        /* Keep the logo at its appropriate size */
+    }
+
+    .boundaries {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width: 769px) {
+    .box {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    canvas {
+        width: 100% !important;
+        height: 400px !important;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .box {
+        max-width: 100%;
+        /* Take full width on mobile */
+        margin: auto;
+        padding: 10px;
+        /* Add some padding for better spacing */
+    }
+
+    canvas {
+        width: 100% !important;
+        /* Ensure the canvas takes the full width */
+        height: auto !important;
+        /* Maintain aspect ratio */
+        max-height: 400px;
+        /* Set a reasonable max height */
+    }
+}
+
+/* */

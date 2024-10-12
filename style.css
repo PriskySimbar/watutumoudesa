@@ -1,0 +1,498 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* --color: #E1E1E1;
+    background-color: #F3F3F3;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px; */
+
+
+    position: relative;
+    /* Position relative for the pseudo-element */
+
+    /* Prevents scrolling */
+    /* Place it behind the content */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    /* Position absolute to cover the body */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/* Header styles */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+/* Logo and Text Combination */
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text img {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.header-text {
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.header-text a {
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+
+.header-text h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #ff0000;
+    /* Red color for header text */
+}
+
+.container {
+    text-align: center;
+    margin: 20px;
+
+}
+
+
+
+.header-text p {
+    font-size: 16px;
+    margin: 0;
+    color: #ff0000;
+    /* Red color for subtitle */
+}
+
+/* Navigation menu styles */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0000;
+    /* Red text color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover a {
+    color: #ff000084;
+    /* Light red on hover */
+}
+
+nav ul li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(253, 253, 253, 0.9);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    width: 150px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+}
+
+.dropdown li {
+    text-align: left;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    /* Dark text color for dropdown */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown li a:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    /* Light red on dropdown hover */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    height: 3px;
+    width: 25px;
+    background-color: red;
+    /* Red lines for hamburger */
+    margin: 3px 0;
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    padding-top: 75px;
+    width: 100%;
+    height: 70vh;
+    /* Set a height for slides */
+    object-fit: cover;
+    /* Make images cover the whole area */
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.a {
+    color: inherit;
+    cursor: default;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    /* Menggunakan Flexbox */
+    justify-content: center;
+    /* Mengatur elemen di tengah */
+    margin-top: 10px;
+    background-color: #ff0000;
+    flex-wrap: wrap;
+    /* Membuat elemen membungkus jika ruang tidak cukup */
+}
+
+.box {
+    color: white;
+    /* Warna teks */
+    padding: 30px;
+    margin: 20px;
+    /* Jarak antar div */
+    text-align: left;
+    /* Teks di kiri */
+    flex: 1;
+    /* Membuat semua div memiliki lebar yang sama */
+    min-width: 250px;
+    /* Menentukan lebar minimum untuk responsivitas */
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex: 100%;
+        /* Membuat kotak memenuhi lebar penuh pada perangkat lebih kecil */
+        margin: 10px 0;
+        /* Jarak vertikal antar div */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 20px;
+        /* Mengurangi padding pada perangkat yang lebih kecil */
+        font-size: 14px;
+        /* Mengurangi ukuran font untuk perangkat kecil */
+    }
+}
+
+/* Icons Section Styles */
+.icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    width: 100px;
+    /* Set icon size */
+    height: auto;
+}
+
+.section {
+    margin-bottom: 40px;
+    /* Space between sections */
+    text-align: center;
+    /* Center the section titles */
+}
+
+.section-title {
+    font-size: 1.75rem;
+    /* Increased font size for titles */
+    color: red;
+    /* Red color for titles */
+    margin-bottom: 20px;
+    /* Space below titles */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Adjust the spacing between cards */
+}
+
+.card {
+    padding: 15px;
+    max-width: 280px;
+    /* Adjusted width */
+    min-width: 260px;
+    /* Minimum width */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.header {
+    margin-top: 0.5rem;
+}
+
+.image {
+    width: 100%;
+    height: 150px;
+    border-radius: 4px;
+    background-color: rgb(205, 235, 255);
+    padding: 9px;
+}
+
+.tag {
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.date {
+    display: flex;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    align-items: center;
+    margin: 2px;
+}
+
+.title {
+    display: block;
+    font-size: 1.5rem;
+    /* Increased font size */
+    line-height: 1.35rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-top: 14px;
+    color: red;
+    /* Change the title color to red */
+}
+
+.description {
+    line-height: 1.375;
+}
+
+.more-button {
+    margin-top: 20px;
+    /* Space above button */
+    padding: 10px 20px;
+    font-size: 1rem;
+    /* Button font size */
+    color: white;
+    /* Text color */
+    background-color: red;
+    /* Button background color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*footer*/
+
+
+.more-button:hover {
+    background-color: darkred;
+    /* Darker color on hover */
+}
+
+/* Contact Section */
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #ffffff;
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+}
+
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        /* Hide nav links by default */
+        flex-direction: column;
+        /* Stack links vertically */
+        width: 100%;
+        /* Full width */
+        position: absolute;
+        /* Position absolute */
+        top: 60px;
+        /* Below header */
+        left: 0;
+        /* Align to the left */
+        background: rgba(249, 249, 249, 0.9);
+        /* Background color */
+    }
+
+    nav ul.show {
+        display: flex;
+        /* Show nav links when toggled */
+    }
+
+    .hamburger {
+        display: flex;
+        /* Show hamburger menu */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        /* Vertical spacing */
+    }
+
+    nav ul li a {
+        padding: 10px;
+        /* Padding for mobile */
+        color: #ff0000;
+        /* Ensure text is red on mobile */
+    }
+
+    .map iframe {
+        height: 400px;
+        width: 400px;
+    }
+}

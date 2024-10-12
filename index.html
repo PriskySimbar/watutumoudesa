@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Resmi Pemerintah Desa Watutumou</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-text">
+                <img src="logo.png" alt="Desa Watutumou Logo">
+                <div class="header-text">
+                    <a href="index.html">
+                        <h1>DESA WATUTUMOU</h1>
+
+                    </a>
+                    <p>KECAMATAN KALAWAT - MINAHASA UTARA</p>
+                </div>
+            </div>
+
+            <nav>
+                <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul id="nav-links" class="nav-links">
+                    <li><a href="#">Profil Desa</a>
+                        <ul class="dropdown">
+                            <li><a href="tentangkami.html">Tentang Kami</a></li>
+                            <li><a href="visi.html">Visi & Misi</a></li>
+                            <li><a href="sejarah.html">Sejarah Desa</a></li>
+                            <li><a href="geografi.html">Geografis Desa</a></li>
+                            <li><a href="demografi.html">Demografi Desa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Pemerintahan</a>
+                        <ul class="dropdown">
+                            <li><a href="struktur.html">Struktur Pemerintahan</a></li>
+                            <li><a href="kegiatandesa.html">Kegiatan Pemerintahan</a></li>
+                            <li><a href="#">Program Pemerintah</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">TP PKK Watutumou</a>
+                        <ul class="dropdown">
+                            <li><a href="pkkprogram.html">Program TP PKK</a></li>
+                            <li><a href="kegiatan.html">Kegiatan TP PKK</a></li>
+                            <li><a href="pkk.html">Profil TP PKK</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Layanan</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Layanan Masyarakat</a></li>
+                            <li><a href="#">Permohonan Layanan</a></li>
+                            <li><a href="#">Konsultasi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Potensi Desa</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Sumber Daya Alam</a></li>
+                            <li><a href="#">Kegiatan Ekonomi</a></li>
+                            <li><a href="potensi.html">Budaya dan Tradisi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Produk Hukum</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Peraturan Desa</a></li>
+                            <li><a href="#">Keputusan Kepala Desa</a></li>
+                            <li><a href="#">Dokumen Hukum</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="slider1.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="slider2.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="slider3.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="slider4.jpg" alt="Image 4"></div>
+        </div>
+        <div class="prev" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="next" onclick="moveSlide(1)">&#10095;</div>
+    </div>
+
+    <main>
+        <section class="icons">
+            <div class="icon">
+                <a href="">
+                    <img src="services.svg" alt="Layanan Masyarakat">
+                </a>
+                <p>Layanan Masyarakat</p>
+            </div>
+            <div class="icon">
+                <a href="potensi.html">
+                    <img src="Asset186.svg" alt="Potensi Desa">
+                </a>
+                <p>Potensi Desa</p>
+            </div>
+            <div class="icon">
+                <a href="link-to-pembangunan-desa.html">
+                    <img src="Asset187.svg" alt="Pembangunan Desa">
+                </a>
+                <p>Pembangunan Desa</p>
+            </div>
+            <div class="icon">
+                <a href="penjabaran apbdes 2023.pdf">
+                    <img src="Asset192.svg" alt="Keuangan Desa">
+                </a>
+                <p>Keuangan Desa</p>
+            </div>
+        </section>
+        <br>
+        <br>
+        <div class="section">
+            <h2 class="section-title">Berita Terkini</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="header">
+                        <div class="image">
+                            <img src="Batu-Bertumbuh-1.jpg" alt="" height="135px" width="235px">
+                            <span class="tag">Berita</span>
+                        </div>
+                        <div class="date">
+                            <span>6 min ago</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a rel="noopener noreferrer" href="potensi.html" class="block">
+                            <span class="title">Destinasi Wisata Batu Bertumbuh</span>
+                        </a>
+                        <p class="description">Batu bertumbuh atau batu hidup merupakan salah satu destinasi wisata yang
+                            dimiliki Desa Watutumou...</p>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="header">
+                        <div class="image">
+                            <span class="tag">Berita</span>
+                        </div>
+                        <div class="date">
+                            <span>10 min ago</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a rel="noopener noreferrer" href="#" class="block">
+                            <span class="title">New Development in the City</span>
+                        </a>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
+                            excepturi. Lorem ipsum dolor sit ...</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <div class="image">
+                            <span class="tag">Berita</span>
+                        </div>
+                        <div class="date">
+                            <span>15 min ago</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a rel="noopener noreferrer" href="#" class="block">
+                            <span class="title">Community Event Coming Up</span>
+                        </a>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
+                            excepturi. Lorem ipsum dolor sit ...</p>
+                    </div>
+                </div> -->
+            </div>
+            <a rel="noopener noreferrer" href="#" class="block">
+                <span class="title">Selengkapnya</span>
+            </a>
+        </div>
+        <div class="section">
+            <h2 class="section-title">Pengumuman</h2>
+            <!-- <div class="card-container">
+                <div class="card">
+                    <div class="header">
+                        <div class="image">
+                            <span class="tag">Pengumuman</span>
+                        </div>
+                        <div class="date">
+                            <span>5 min ago</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a rel="noopener noreferrer" href="#" class="block">
+                            <span class="title">New Announcement</span>
+                        </a>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
+                            excepturi. Lorem ipsum dolor sit ...</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <div class="image">
+                            <span class="tag">Pengumuman</span>
+                        </div>
+                        <div class="date">
+                            <span>10 min ago</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a rel="noopener noreferrer" href="#" class="block">
+                            <span class="title">Important Update</span>
+                        </a>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
+                            excepturi. Lorem ipsum dolor sit ...</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <div class="image">
+                            <span class="tag">Pengumuman</span>
+                        </div>
+                        <div class="date">
+                            <span>20 min ago</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a rel="noopener noreferrer" href="#" class="block">
+                            <span class="title">New Village Policy</span>
+                        </a>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
+                            excepturi. Lorem ipsum dolor sit ...</p>
+                    </div>
+                </div>
+            </div> -->
+            <a rel="noopener noreferrer" href="#" class="block">
+                <span class="title">Selengkapnya</span>
+            </a>
+        </div>
+        <div class="section">
+            <h2 class="section-title">Agenda Kegiatan</h2>
+            <!-- <div class="card-container">
+                <div class="card">
+                    <div class="header">
+                        <div class="image">
+                            <span class="tag">Kegiatan</span>
+                        </div>
+                        <div class="date">
+                            <span>5 min ago</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a rel="noopener noreferrer" href="#" class="block">
+                            <span class="title">Upcoming Workshop</span>
+                        </a>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
+                            excepturi. Lorem ipsum dolor sit ...</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <div class="image">
+                            <span class="tag">Kegiatan</span>
+                        </div>
+                        <div class="date">
+                            <span>10 min ago</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a rel="noopener noreferrer" href="#" class="block">
+                            <span class="title">Community Meeting</span>
+                        </a>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
+                            excepturi. Lorem ipsum dolor sit ...</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <div class="image">
+                            <span class="tag">Kegiatan</span>
+                        </div>
+                        <div class="date">
+                            <span>30 min ago</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a rel="noopener noreferrer" href="#" class="block">
+                            <span class="title">Village Gathering</span>
+                        </a>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
+                            excepturi. Lorem ipsum dolor sit ...</p>
+                    </div>
+                </div>
+            </div> -->
+            <a rel="noopener noreferrer" href="#" class="block">
+                <span class="title">Selengkapnya</span>
+            </a>
+            <br>
+            <br>
+            <br>
+            <h3 class="section-title">Lokasi Desa</h3>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15953.99214105313!2d124.90258369051219!3d1.4740319761935796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32870a53e491de79%3A0x10d424947de62e96!2sWatutumou%2C%20Kalawat%2C%20North%20Minahasa%20Regency%2C%20North%20Sulawesi%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1727431539219!5m2!1sen!2sus"
+                    style="border:0;" allowfullscreen="" loading="lazy" height="1000" width="90%"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+
+    </main>
+    <section class="content">
+        <div class="box">
+            <h2>Profil</h2>
+            <p>DESA WATUTUMOU<br>MINAHASA UTARA - SULAWESI UTARA</p>
+            <p>Website desa dibangun dengan tujuan sebagai media pelayanan publik resmi desa, yang dibangun dan
+                dikelola
+                oleh tim desa setempat. Dengan memanfaatkan website penyelenggaraan pelayanan publik dapat dilakukan
+                secara
+                cepat dan mudah.</p>
+            <a href="#">selengkapnya &rarr;</a>
+        </div>
+
+        <div class="box">
+            <h2>Tautan</h2>
+            <ul>
+                <li><a href="#">Kementerian Desa, Pembangunan Daerah Tertinggal dan Transmigrasi RI</a></li>
+                <li><a href="#">E-Posyandu</a></li>
+                <li><a href="#">N/A</a></li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Kontak Kami</h2>
+            <h4>Perumahan Maumbi Indah, Jaga IV<br>Kode Pos KALAWAT 95378
+
+            </h4>
+            <p>Email: <a href="">N/A</a></p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <p>2020-2024 &copy; Kementerian Komunikasi dan Informatika RI.</p>
+        </div>
+    </section>
+
+
+
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
