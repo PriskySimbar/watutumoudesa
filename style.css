@@ -302,6 +302,14 @@ nav ul li:hover .dropdown {
     height: auto;
 }
 
+@media(max-width: 768px) {
+    .icon img {
+        width: 70px;
+        /* Set icon size */
+        height: auto;
+    }
+}
+
 .section {
     margin-bottom: 40px;
     /* Space between sections */
