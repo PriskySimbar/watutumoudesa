@@ -294,6 +294,7 @@ nav ul li:hover .dropdown {
 
 .icon {
     text-align: center;
+    font-size: 15px;
 }
 
 .icon img {
@@ -304,7 +305,7 @@ nav ul li:hover .dropdown {
 
 @media(max-width: 768px) {
     .icon img {
-        width: 70px;
+        width: 60px;
         /* Set icon size */
         height: auto;
     }
